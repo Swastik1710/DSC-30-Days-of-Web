@@ -237,7 +237,7 @@ header img{
 /* Projects styles */
 
 .pros{
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     text-align: center;
     position: relative;
 }
@@ -391,7 +391,7 @@ textarea{
 
 .connect img{
     width: 250px;
-    margin-bottom: -130px;
+    margin-bottom: -115px;
     margin-left: 10px;
     height: 100px;
 }

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href=""><img src="./Images/Signature1.png"></a>
+        </header>
+        <!-- Welcome -->
+        <!-- <div id="video">
+            <video width="1340" height="535" autoplay controls>
+                <source src="./Videos/Welcome Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div> -->
+        <!-- Intro -->
+        <div class="profile_main">
+            <div class="prof_img">
+                <img src="./Images/Profile.jpg" alt="Profile Picture" height="200" width="200">
+            </div>
+            <h1>Hi👋,I'm Swastik Raj Singh !!!</h1>
+            <h3>Front End Web Developer and an Open Source Contributor!</h3>
+            <!-- Contact Links -->
+            <div class="social_icons">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/swastik_17.10/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Swastik1710"><i class="fa fa-github"></i></a>
+                <a href="mailto:swastikrajsingh7777@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+        <section>
+            <!-- About me -->
+            <div class="abt">
+                <img src="./Images/Skills.jpg" height="500" width="100%">
+                <h2>About Me</h2>
+                <p>I am a <strong>2nd Year Information Science Undergrad</strong> and a passionate <strong>Web Developer</strong>
+                    building beautiful web pages,app clones etc.
+                </p>
+                <h3>My Skillset includes :</h3>
+                <h4>HTML , CSS , JS , Bootstrap , NodeJS , ExpressJS , MongoDB , GIT</h4>
+            </div>
+            <!-- Education -->
+            <div class="edu">
+                <img src="./Images/Education.jpg" height="500" width="100%">
+                <h2>Education</h2>
+                <div class="edu-table">
+                    <table>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Place</th>
+                        </tr>
+                        <tr>
+                            <td>Graduation</td>
+                            <td>CMR Institue of Technology, Bangalore<br>B-tech, Information Science and
+                                Engineering<br>2019-2023</td>
+                        </tr>
+                        <tr>
+                            <td>High School</td>
+                            <td>Rajendra Vidyalaya, Jamshedpur<br>Computer Science<br>2017-2019</td>
+                        </tr>
+                        <tr>
+                            <td>Elementary School</td>
+                            <td>Rajendra Vidyalaya, Jamshedpur<br>2004-2017</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Experience -->
+            <div class="expr">
+                <h2>Experience</h2>
+                <img src="./Images/Experience.jpg" height="400" width="100%">
+                <div class="expr_list">
+                    <ul>
+                        <li>
+                            Completed both <strong>Cloud Engineering</strong> and <strong>Data Science & Machine
+                                Learning</strong> tracks in the <strong>30 Days of Google Cloud Program</strong>.
+                        </li>
+                        <li>
+                            Completed the <strong>Hacktoberfest 2020</strong> challenge successfully.
+                        </li>
+                        <li>
+                            Participated in the <strong>DevScript Winter of Code(DWOC)</strong>.
+                        </li>
+                        <li>
+                            Participated in the <strong>Script Winter of Code(SWOC)</strong>.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Projects -->
+            <div class="pros">
+                <img src="./Images/Projects.jpg" height="250" width="100%">
+                <h2>Projects</h2>
+                <div>
+                    <ul>
+                        <li><a href="https://github.com/Swastik1710/Todo-App">Todo App</a></li>
+                        <li><a href="https://github.com/Swastik1710/Covid-19-Tracker">Covid-19-Tracker</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="contact">
+                <img src="./Images/Contact.jpg" height="600" width="100%">
+                <form class="contact_form">
+                    <h2>Get in Touch</h2>
+                    <div class="Fname">
+                        <!-- <label for="fname">First name:</label> -->
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="Lname">
+                        <!-- <label for="lname">Last name:</label> -->
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+                    </div>
+                    <div class="email">
+                        <!-- <label for="email">Email id:</label> -->
+                        <input type="email" id="email" name="email" placeholder="Enter your email id" required>
+                    </div>
+                    <div class="phone">
+                        <!-- <label for="phone">Phone No:</label> -->
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your Phone No." required>
+                    </div>
+                    <div class="identity">
+                        <!-- <label for="info">Profession</label> -->
+                        <!-- <input type="radio" id="student" name="profession" value="student">
+                        <label for="student">Student</label>
+                        <input type="radio" id="employee" name="profession" value="employee">
+                        <label for="employee">Working Professional</label>
+                        <input type="radio" id="employer" name="profession" value="employer">
+                        <label for="employer">Job Recruiter</label>
+                        <input type="radio" id="other" name="profession" value="other">
+                        <label for="other">Other</label> -->
+                        <select name="Profession" id="profession">
+                            <option>Please select a profession</option>
+                            <option value="Student">Student</option>
+                            <option value="employee">Employee</option>
+                            <option value="employer">Employer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="msg">
+                        <!-- <label for="msg">Your Message</label> -->
+                        <textarea id="msg" name="msg" rows="4" cols="40" placeholder="Message for me">
+                        </textarea>
+                    </div>
+                    <!-- <div class="check">
+                        <input type="checkbox" id="confirm" name="confirm" value="confirm">
+                        <label for="confirm">May I contact you</label>
+                    </div> -->
+                    <div class="btn">
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                <div class="connect">
+                    <h2>Connect with me</h2>
+                    <div class="icons">
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/swastik_17.10/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/Swastik1710"><i class="fa fa-github"></i></a>
+                        <a href="mailto:swastikrajsingh7777@gmail.com"><i class="fa fa-envelope"></i></a>
+                    </div>
+                    <img src="./Images/Signature_2.gif">
+                </div>
+            </div>
+            <div class="cprt">
+                <h3>Copyright © 2020 Swastik Raj Singh</h3>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

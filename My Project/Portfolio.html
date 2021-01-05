@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <header>
             <a href=""><img src="./Images/Signature1.png"></a>
         </header>
@@ -23,74 +25,94 @@
         </div> -->
         <!-- Intro -->
         <div class="profile_main">
-            <div class="prof_img">
-                <img src="./Images/Profile.jpg" alt="Profile Picture" height="200" width="200">
+            <div class="back">
+                <img src="https://coderkube.com/wp-content/uploads/2017/06/69638974-portfolio-wallpapers.jpg"
+                    height="500" width="100%">
             </div>
-            <h1>Hi👋,I'm Swastik Raj Singh !!!</h1>
-            <h3>Front End Web Developer and an Open Source Contributor!</h3>
-            <!-- Contact Links -->
-            <div class="social_icons">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href="https://www.instagram.com/swastik_17.10/"><i class="fa fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/Swastik1710"><i class="fa fa-github"></i></a>
-                <a href="mailto:swastikrajsingh7777@gmail.com"><i class="fa fa-envelope"></i></a>
+            <div class="prof">
+                <div class="prof_img">
+                    <img src="./Images/Profile.jpg" alt="Profile Picture" height="200" width="200">
+                </div>
+                <h1>Hi👋,I'm Swastik Raj Singh !!!</h1>
+                <h3>Front End Web Developer and an Open Source Enthusiast!</h3>
+                <!-- Contact Links -->
+                <div class="social_icons">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/swastik_17.10/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/Swastik1710"><i class="fa fa-github"></i></a>
+                    <a href="mailto:swastikrajsingh7777@gmail.com"><i class="fa fa-envelope"></i></a>
+                </div>
             </div>
         </div>
+        <!-- <div class="row">
+            <div class="col-md-6 p-0">
+                <img src="./Images/Q1.jpg" width="100%" height="200" style="filter:opacity(50%);">
+            </div>
+            <div class="col-md-6 p-0">
+                <img src="./Images/Q2.jpg" width="100%" height="200" style="filter:opacity(50%);">
+            </div>
+        </div> -->
+        <!-- <div class="row">
+            <img src="./Images/Q3.jpg" width="100%" height="200">
+        </div> -->
         <section>
             <!-- About me -->
             <div class="abt">
-                <img src="./Images/Skills.jpg" height="500" width="100%">
+                <img src="./Images/Skills.jpg" height="600" width="100%">
                 <h2>About Me</h2>
-                <p>I am a <strong>2nd Year Information Science Undergrad</strong> and a passionate <strong>Web Developer</strong>
-                    building beautiful web pages,app clones etc.
-                </p>
-                <h3>My Skillset includes :</h3>
+                <p>I am a passionate <strong>Web Developer</strong> and an <strong>Open Source Contributor</strong>
+                    based out of <strong>India</strong>. I am highly experienced in designing and developing beautiful &
+                    functional Web pages.
+                    Currently, I'm pursuing my <strong>B-Tech degree</strong> in <strong>Information Science and
+                        Engineering</strong>.</p>
+                <h3>My Skillset includes</h3>
                 <h4>HTML , CSS , JS , Bootstrap , NodeJS , ExpressJS , MongoDB , GIT</h4>
             </div>
             <!-- Education -->
             <div class="edu">
                 <img src="./Images/Education.jpg" height="500" width="100%">
                 <h2>Education</h2>
-                <div class="edu-table">
-                    <table>
-                        <tr>
-                            <th>Degree</th>
-                            <th>Place</th>
-                        </tr>
-                        <tr>
-                            <td>Graduation</td>
-                            <td>CMR Institue of Technology, Bangalore<br>B-tech, Information Science and
-                                Engineering<br>2019-2023</td>
-                        </tr>
-                        <tr>
-                            <td>High School</td>
-                            <td>Rajendra Vidyalaya, Jamshedpur<br>Computer Science<br>2017-2019</td>
-                        </tr>
-                        <tr>
-                            <td>Elementary School</td>
-                            <td>Rajendra Vidyalaya, Jamshedpur<br>2004-2017</td>
-                        </tr>
-                    </table>
-                </div>
+                <!-- <div class="edu-table"> -->
+                <table class="table table-striped table-info table-bordered ">
+                    <tr>
+                        <th table-dark>Degree</th>
+                        <th table-dark>Place</th>
+                    </tr>
+                    <tr>
+                        <td>Graduation</td>
+                        <td>CMR Institue of Technology, Bangalore<br>B-tech, Information Science and
+                            Engineering<br>2019-2023</td>
+                    </tr>
+                    <tr>
+                        <td>High School</td>
+                        <td>Rajendra Vidyalaya, Jamshedpur<br>Computer Science<br>2017-2019</td>
+                    </tr>
+                    <tr>
+                        <td>Elementary School</td>
+                        <td>Rajendra Vidyalaya, Jamshedpur<br>2004-2017</td>
+                    </tr>
+                    <!-- </div> -->
+                </table>
             </div>
             <!-- Experience -->
             <div class="expr">
                 <h2>Experience</h2>
                 <img src="./Images/Experience.jpg" height="400" width="100%">
                 <div class="expr_list">
-                    <ul>
-                        <li>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-action">
                             Completed both <strong>Cloud Engineering</strong> and <strong>Data Science & Machine
                                 Learning</strong> tracks in the <strong>30 Days of Google Cloud Program</strong>.
                         </li>
-                        <li>
+                        <li class="list-group-item list-group-item-action">
                             Completed the <strong>Hacktoberfest 2020</strong> challenge successfully.
                         </li>
-                        <li>
+                        <li class="list-group-item list-group-item-action">
                             Participated in the <strong>DevScript Winter of Code(DWOC)</strong>.
                         </li>
-                        <li>
+                        <li class="list-group-item list-group-item-action">
                             Participated in the <strong>Script Winter of Code(SWOC)</strong>.
                         </li>
                     </ul>
@@ -110,24 +132,29 @@
         </section>
         <footer>
             <div class="contact">
-                <img class="foot_img" src="./Images/Contact.jpg" height="450" width="100%">
+                <img class="foot_img" src="./Images/Contact.jpg" height="520" width="100%">
                 <form class="contact_form">
                     <h2>Get in Touch</h2>
-                    <div class="name">
-                        <!-- <label for="fname">First name:</label> -->
+                    <!-- <div class="name">
+                        <label for="fname">First name:</label>
                         <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    </div>
+                    </div> -->
                     <!-- <div class="Lname">
                         <label for="lname">Last name:</label>
                         <input type="text" id="lname" name="lname" placeholder="Enter your last name">
                     </div> -->
+                    <div class="name input-group">
+                        <input type="text" aria-label="First name" class="form-control" placeholder="First Name"
+                            required>
+                        <input type="text" aria-label="Last name" class="form-control" placeholder="Last Name">
+                    </div>
                     <div class="email">
                         <!-- <label for="email">Email id:</label> -->
-                        <input type="email" id="email" name="email" placeholder="Enter your email id" required>
+                        <input type="email" id="email" name="email" placeholder="Email id" required>
                     </div>
                     <div class="phone">
                         <!-- <label for="phone">Phone No:</label> -->
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your Phone No." required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone No." required>
                     </div>
                     <div class="identity">
                         <!-- <label for="info">Profession</label> -->
@@ -149,8 +176,7 @@
                     </div>
                     <div class="msg">
                         <!-- <label for="msg">Your Message</label> -->
-                        <textarea id="msg" name="msg" rows="3" cols="23" placeholder="Message for me">
-                        </textarea>
+                        <textarea id="msg" name="msg" rows="3" cols="23" placeholder="Message for me"></textarea>
                     </div>
                     <!-- <div class="check">
                         <input type="checkbox" id="confirm" name="confirm" value="confirm">
@@ -167,11 +193,22 @@
                 <div class="connect">
                     <h2>Connect with me</h2>
                     <div class="icons">
-                        <a href=""><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/swastik_17.10/"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://github.com/Swastik1710"><i class="fa fa-github"></i></a>
-                        <a href="mailto:swastikrajsingh7777@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <div class="icon">
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/swastik_17.10/"><i class="fa fa-instagram"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/Swastik1710"><i class="fa fa-github"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href="mailto:swastikrajsingh7777@gmail.com"><i class="fa fa-envelope"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,7 +217,6 @@
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>

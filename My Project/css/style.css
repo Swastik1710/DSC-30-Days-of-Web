@@ -8,8 +8,8 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    width: 100%;
+.container-fluid{
+    padding: 0;
     margin: 0 auto;
     z-index: 1;
 }
@@ -25,39 +25,57 @@ header img{
     width: 20rem;
     margin-bottom: -2rem;
     margin-left: 1rem;
-    height: 7rem;
+    height: 8rem;
 }
 
 .video {
     display: block;
 }
 
-.profile_main {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.back{
+    position: relative;
+}
+
+.back img{
+    filter: opacity(50%);
+}
+
+.prof{
+    position: absolute;
+    top: 20%;
+    left: 32%;
     text-align: center;
+}
+
+.profile_main{
+    margin-bottom: 5rem;
 }
 
 .prof_img img {
     border-radius: 50%;
-    border-color: black;
 }
 
 .profile_main h1 {
     font-family: cursive;
-    margin: 1rem;
+    margin: 2rem;
     font-size: 3rem;
+    color: black;
 }
 
 .profile_main h3 {
     font-style: italic;
     margin-bottom: 1rem;
     font-size: 2rem;
+    color: black;
+}
+
+.social_icons{
+    margin-top: 2rem;
 }
 
 .social_icons a {
-    font-size: 4rem;
-    margin: 0 1rem;
+    font-size: 4.5rem;
+    margin: 1rem 1.5rem;
 }
 
 .social_icons i:hover {
@@ -98,10 +116,11 @@ header img{
     font-size: 4rem;
     text-decoration: underline;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 70%;
     transform: translate(-50%, -50%);
     color: white;
+    font-family: 'Arial Black';
 }
 
 .abt p {
@@ -118,18 +137,19 @@ header img{
 .abt h3 {
     font-size: 3rem;
     position: absolute;
-    top: 55%;
+    top: 65%;
     left: 70%;
     transform: translate(-50%, -50%);
     color: white;
     text-decoration: underline;
+    font-family: 'Arial Black';
 }
 
 .abt h4 {
     font-size: 2rem;
     font-family:monospace;
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 43%;
     transform: translate(-1%, -50%);
     color: white;
@@ -148,55 +168,49 @@ header img{
     margin-bottom: 2rem;
     text-decoration: underline;
     position: absolute;
-    top: 15%;
-    left: 22%;
+    top: 5%;
+    left: 20%;
     color: white;
+    font-family: 'Arial Black';
 }
 
 .edu table {
     width: 64rem;
-    border-collapse: collapse;
-    border-spacing: 0;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+    /* border-collapse: collapse;
+    border-spacing: 0; */
     position: absolute;
-    top:30%;
+    top: 20%;
     left: 5%;
 }
 
-.edu table td,th {
+/* .edu table td,th {
     border: 0.1rem solid transparent;
     height: 3rem;
     transition: all 0.3s;
-}
+} */
 
 .edu th {
     background: skyblue; 
-    font-weight: bold;
     font-size: 2.2rem;
-    padding: 1rem;
 }
 
 .edu td {
     font-size: 1.8rem;
-    background: #fafafa;
-    text-align: center;
-    padding: 1rem;
     font-family:monospace;
-}
+} 
 
-.edu tr:nth-child(even) td {
+/*.edu tr:nth-child(even) td {
     background: #f1f1f1;
 }
 
 .edu tr:nth-child(odd) td {
     background: #fefefe;
-}
+} */
 
 .edu tr td:hover {
     background: #2c3e50;
     color: #fff;
-}
+} 
 
 /* Experience styles */
 
@@ -210,26 +224,29 @@ header img{
     font-size: 4rem;
     text-decoration: underline;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
+    font-family: 'Arial Black';
 }
 
 .expr_list{
-    margin: 2rem 0;
+    margin-top: 3rem;
     font-size: 2rem;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 43%;
     transform: translate(-38%,-50%);
-    color: white;
 }
 
 .expr_list ul li{
-    margin: 3rem 0;
     font-family:monospace;
     color: white;
+}
+
+.list-group-item{
+    background: none;
 }
 
 /* Projects styles */
@@ -237,6 +254,7 @@ header img{
 .pros{
     text-align: center;
     position: relative;
+    /* margin-bottom: 5rem; */
 }
 
 .pros h2{
@@ -248,6 +266,7 @@ header img{
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
+    font-family: 'Arial Black';
 }
 
 .pros ul{
@@ -287,7 +306,7 @@ footer{
 .contact_form{
     position: absolute;
     top: 5%;
-    right: 65%;
+    right: 60%;
     color: white;
 }
 
@@ -296,6 +315,8 @@ footer{
     font-size: 3rem;
     color: black;
     text-decoration: underline;
+    font-weight: 600;
+    font-family: 'Courier New';
 }
 
 .contact_form input{
@@ -304,16 +325,17 @@ footer{
     width: 30rem;
     color: black;
     border-radius: 1.5rem;
-    padding-left: 0.3rem;
+    padding: 0.3rem;
     font-size: 2rem;
+}
+
+.name{
+    width: 30rem;
+    margin-left: .5rem;
 }
 
 input,textarea::placeholder{
     color: black;
-}
-
-textarea{
-    text-align: left;
 }
 
 .identity label{
@@ -325,7 +347,8 @@ textarea{
     margin-top: 1rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    height: 30px;
+    height: 4rem;
+    font-size: 2rem;
 }
 
 .identity select option{
@@ -344,12 +367,7 @@ textarea{
 .btn input{
     width: 9rem;
     margin: 1rem;
-    height: 3.5rem;
-    padding-bottom: 3rem;
-}
-
-.btn{
-    height: 2rem;
+    height: 4rem;
 }
 
 .btn input:hover{
@@ -361,7 +379,7 @@ textarea{
 .connect{
     position: absolute;
     top: 5%;
-    left: 66%;
+    left: 60%;
     color: black;
 }
 
@@ -369,12 +387,13 @@ textarea{
     font-size: 3rem;
     margin-bottom: 3rem;
     text-decoration: underline;
+    font-weight: 600;
+    font-family: 'Courier New';
 }
 
 .icons a {
     font-size: 5rem;
-    margin: 1rem 0;
-    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .icons i:hover {
@@ -393,8 +412,8 @@ textarea{
 
 .Sign{
     position: absolute;
-    top: 85%;
-    left: 46%;
+    top: 90%;
+    left: 45%;
 }
 
 .cprt{
@@ -413,6 +432,12 @@ html{
     html{
         font-size: 55%;
     }
+    .prof{
+        top: 17%;
+    }
+    .edu h2{
+        left: 20%;
+    }
     .edu table {
         width: 60rem;
     }
@@ -424,7 +449,8 @@ html{
     }
     .contact_form h2{
         margin-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-weight: 600;
         color: black;
         text-decoration: underline;
     } 
@@ -461,14 +487,18 @@ html{
         color: black;
     }
     .connect h2{
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-weight: 600;
         margin-bottom: 3rem;
         text-decoration: underline;
     }
     .Sign{
         position: absolute;
-        top: 80%;
+        top: 90%;
         left: 48%;
+    }
+    .Sign img{
+        width: 20rem;
     }
     .btn input{
         width: 8rem;
@@ -477,7 +507,7 @@ html{
         padding-bottom: 3rem;
     }
     .foot_img{
-        height: 45rem;
+        height: 50rem;
     }
 }
 
@@ -485,8 +515,28 @@ html{
     html{
         font-size: 45%;
     }
+    .prof{
+        right: 25%;
+        top: 10%;
+    }
+    .prof_img img{
+        height: 20rem;
+        width: 20rem;
+    }
+    .social_icons a{
+        margin: 0.5rem;
+    }
+    .back img{
+        height: 55rem;
+    }
     .edu table {
         width: 50rem;
+    }
+    .expr h2{
+        top: 5%;
+    }
+    .expr_list{
+        margin: 0;
     }
     .contact_form{
         position: absolute;
@@ -508,6 +558,9 @@ html{
         border-radius: 1.5rem;
         padding-left: 0.3rem;
         font-size: 1.8rem;
+    }
+    .name{
+        width: 17rem;
     }
     .identity select {
         width: 17rem;
@@ -531,7 +584,6 @@ html{
         left: 70%;
         color: black;
     }
-    
     .connect h2{
         font-size: 2rem;
         margin-bottom: 3rem;
@@ -539,8 +591,8 @@ html{
     }
     .Sign{
         position: absolute;
-        top: 85%;
-        left: 48%;
+        top: 90%;
+        left: 47%;
     }
     .Sign img{
         width: 16rem;
@@ -554,9 +606,57 @@ html{
 }
 
 @media(max-width:408px) {
+    html{
+        font-size: 38%;
+    }
+    .social_icons a{
+        margin: 0.2rem;
+    }
+    .back img{
+        height: 65rem;
+    }
+    .prof h1{
+        margin: 0.5rem;
+    }
+    .prof h3{
+        margin: 0.5rem;
+    }
+    .abt h2{
+        left: 72%;
+    }
+    .abt p{
+        top: 40%;
+    }
+    .abt h3{
+        top: 65%;
+    }
+    .abt h4{
+        top: 80%;
+    }
     .edu table {
-        width: 30rem;
-        top: 25%;
+        width: 40rem;
+        left: 5%;
+    }
+    .edu h2{
+        left: 25%;
+        /* font-size: 3rem; */
+    }
+    .expr h2{
+        top: 5%;
+        /* font-size: 3rem; */
+    }
+    .expr_list{
+        top: 50%;
+        font-size: 1.8rem;
+    }
+    .expr_list ul li{
+        margin: 0;
+    }
+    .Sign{
+        left: 40%;
+    }
+    .foot_img{
+        height: 55rem;
     }
 }
 
